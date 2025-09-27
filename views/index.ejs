@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WhatsApp Bot Dashboard</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    h1 { color: #25D366; }
+    .card { border: 1px solid #ddd; padding: 15px; margin: 10px; border-radius: 10px; }
+    .active { color: green; font-weight: bold; }
+    .inactive { color: red; }
+  </style>
+</head>
+<body>
+  <h1>📱 WhatsApp Bot Dashboard</h1>
+
+  <h2>Registered Sessions</h2>
+  <ul>
+    <% if (registered.length === 0) { %>
+      <li>No sessions registered</li>
+    <% } else { %>
+      <% registered.forEach(id => { %>
+        <li>
+          <%= id %> - 
+          <% if (active.includes(id)) { %>
+            <span class="active">Active</span>
+          <% } else { %>
+            <span class="inactive">Stopped</span>
+            <form action="/start" method="POST" style="display:inline;">
+              <input type="hidden" name="id" value="<%= id %>"/>
+              <button type="submit">▶️ Start</button>
+            </form>
+          <% } %>
+        </li>
+      <% }) %>
+    <% } %>
+  </ul>
+
+  <h2>Register New Session</h2>
+  <form action="/register" method="POST">
+    <input type="text" name="id" placeholder="Session ID" required />
+    <button type="submit">➕ Register</button>
+  </form>
+
+  <h2>Send Test Message</h2>
+  <form action="/send" method="POST">
+    <input type="text" name="id" placeholder="Session ID" required />
+    <input type="text" name="number" placeholder="Recipient Number (e.g. 919876543210)" required />
+    <input type="text" name="message" placeholder="Message" required />
+    <button type="submit">📩 Send</button>
+  </form>
+</body>
+</html>

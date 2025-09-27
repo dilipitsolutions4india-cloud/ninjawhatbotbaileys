@@ -1,0 +1,30 @@
+
+<h2>Messages</h2>
+<form>
+  <select onchange="window.location='/messages/'+this.value">
+    <option value="">Select Session</option>
+    <% registered.forEach(id => { %>
+      <option value="<%= id %>" <%= sessionId===id?"selected":"" %>><%= id %></option>
+    <% }) %>
+  </select>
+</form>
+
+<% if (sessionId) { %>
+<h3>Messages for <%= sessionId %></h3>
+<ul id="messagesList">
+  <% messages.forEach(m => { %>
+    <li><strong><%= m.type %>:</strong> <%= m.text %> <small>(<%= new Date(m.timestamp).toLocaleTimeString() %>)</small></li>
+  <% }) %>
+</ul>
+<script>
+  const socket = io()
+  socket.on("newMessage", m => {
+    if(m.sessionId === "<%= sessionId %>") {
+      const ul = document.getElementById("messagesList")
+      const li = document.createElement("li")
+      li.innerHTML = `<strong>${m.type}:</strong> ${m.text} <small>(${new Date(m.timestamp).toLocaleTimeString()})</small>`
+      ul.appendChild(li)
+    }
+  })
+</script>
+<% } %>

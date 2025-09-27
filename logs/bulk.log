@@ -1,0 +1,300 @@
+[2025-09-25T05:43:36.641Z] 📩 Received Authentication bulk send request
+[2025-09-25T05:45:28.819Z] 📩 Received Authentication bulk send request
+[2025-09-25T05:45:46.688Z] 📩 Received Authentication bulk send request
+[2025-09-25T05:50:06.880Z] 📩 Received Marketing bulk send request
+[2025-09-25T05:50:06.881Z] 🚀 Bulk send started | Mode: marketing | Sessions: 0 | Recipients: 1
+[2025-09-25T05:50:06.881Z] ⚠️ Queued 1 recipients (no available session).
+[2025-09-25T06:00:03.013Z] 🚀 OTP Bulk send started | Sessions: 1 | Recipients: 1
+[2025-09-25T06:00:03.882Z] ✅ Session 0 | Sent to 917011611817@s.whatsapp.net (1/1)
+[2025-09-25T06:00:05.884Z] 🎯 Session 0 finished sending 1 messages.
+[2025-09-25T06:14:07.936Z] 🚀 OTP Bulk send started | Sessions: 1 | Recipients: 1
+[2025-09-25T11:02:01.801Z] 🚀 OTP Bulk send started | Sessions: 1 | Recipients: 1
+[2025-09-25T11:06:09.321Z] 🚀 OTP Bulk send started | Sessions: 1 | Recipients: 1
+[2025-09-25T11:12:54.921Z] 🚀 OTP Bulk send started | Sessions: 8 | Recipients: 1
+[2025-09-25T11:12:55.897Z] ✅ Session 0 | Sent to 916361161836@s.whatsapp.net (1/1)
+[2025-09-25T11:12:57.912Z] 🎯 Session 0 finished sending 1 messages.
+[2025-09-25T11:23:50.275Z] 🚀 OTP Bulk send started | Sessions: 8 | Recipients: 300
+[2025-09-25T11:23:51.154Z] ✅ Session 4 | Sent to 917838830817@s.whatsapp.net (1/12)
+[2025-09-25T11:23:51.167Z] ✅ Session 4 | Sent to 918860576284@s.whatsapp.net (1/12)
+[2025-09-25T11:23:51.243Z] ✅ Session 7 | Sent to 918130712131@s.whatsapp.net (1/12)
+[2025-09-25T11:23:51.254Z] ✅ Session 3 | Sent to 918847043048@s.whatsapp.net (1/12)
+[2025-09-25T11:23:51.306Z] ✅ Session 2 | Sent to 918826675587@s.whatsapp.net (1/12)
+[2025-09-25T11:23:51.306Z] ✅ Session 2 | Sent to 917503924502@s.whatsapp.net (1/12)
+[2025-09-25T11:23:51.351Z] ✅ Session 3 | Sent to 918527835503@s.whatsapp.net (1/12)
+[2025-09-25T11:23:51.352Z] ✅ Session 1 | Sent to 918447744202@s.whatsapp.net (1/12)
+[2025-09-25T11:23:51.352Z] ✅ Session 7 | Sent to 919013338577@s.whatsapp.net (1/12)
+[2025-09-25T11:23:51.353Z] ✅ Session 1 | Sent to 918802770960@s.whatsapp.net (1/12)
+[2025-09-25T11:23:51.366Z] ✅ Session 2 | Sent to 918521209686@s.whatsapp.net (1/12)
+[2025-09-25T11:23:51.367Z] ✅ Session 7 | Sent to 918800611435@s.whatsapp.net (1/12)
+[2025-09-25T11:23:52.073Z] ✅ Session 5 | Sent to 918745011375@s.whatsapp.net (1/12)
+[2025-09-25T11:23:52.301Z] ✅ Session 5 | Sent to 918010101713@s.whatsapp.net (1/12)
+[2025-09-25T11:23:52.320Z] ✅ Session 0 | Sent to 917042110045@s.whatsapp.net (1/12)
+[2025-09-25T11:23:52.346Z] ✅ Session 6 | Sent to 919013231503@s.whatsapp.net (1/12)
+[2025-09-25T11:23:52.347Z] ✅ Session 6 | Sent to 918103735254@s.whatsapp.net (1/12)
+[2025-09-25T11:23:52.373Z] ✅ Session 0 | Sent to 918375915700@s.whatsapp.net (1/12)
+[2025-09-25T11:23:52.555Z] ✅ Session 0 | Sent to 918802215815@s.whatsapp.net (1/12)
+[2025-09-25T11:23:52.973Z] ✅ Session 1 | Sent to 917503160116@s.whatsapp.net (1/12)
+[2025-09-25T11:23:53.261Z] ❌ Session 3 | Failed to send to 918860018080@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.263Z] ❌ Session 3 | Failed to send to 918860116639@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.264Z] ❌ Session 3 | Failed to send to 918860141233@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.265Z] ❌ Session 3 | Failed to send to 918860182259@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.266Z] ❌ Session 3 | Failed to send to 918860230692@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.267Z] ❌ Session 3 | Failed to send to 918860320636@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.269Z] ❌ Session 3 | Failed to send to 918860367417@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.271Z] ❌ Session 3 | Failed to send to 918860429493@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.273Z] ❌ Session 3 | Failed to send to 918860430089@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.274Z] ❌ Session 3 | Failed to send to 918860515284@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.276Z] ❌ Session 3 | Failed to send to 918860519485@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.277Z] 🎯 Session 3 finished sending 1 messages.
+[2025-09-25T11:23:53.363Z] ❌ Session 3 | Failed to send to 918560508377@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.364Z] ❌ Session 3 | Failed to send to 918585918515@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.366Z] ❌ Session 3 | Failed to send to 918585946414@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.367Z] ❌ Session 3 | Failed to send to 918585956736@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.369Z] ❌ Session 3 | Failed to send to 918586021355@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.370Z] ❌ Session 3 | Failed to send to 918586802651@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.372Z] ❌ Session 3 | Failed to send to 918586823131@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.373Z] ❌ Session 3 | Failed to send to 918586972699@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.375Z] ❌ Session 3 | Failed to send to 918587031313@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.376Z] ❌ Session 3 | Failed to send to 918587033147@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.378Z] ❌ Session 3 | Failed to send to 918587055259@s.whatsapp.net | Connection Closed
+[2025-09-25T11:23:53.379Z] 🎯 Session 3 finished sending 1 messages.
+[2025-09-25T11:23:54.238Z] ✅ Session 7 | Sent to 918130963219@s.whatsapp.net (2/12)
+[2025-09-25T11:23:54.309Z] ✅ Session 7 | Sent to 918800633141@s.whatsapp.net (2/12)
+[2025-09-25T11:23:56.368Z] ✅ Session 7 | Sent to 919013359720@s.whatsapp.net (2/12)
+[2025-09-25T11:23:56.384Z] ✅ Session 6 | Sent to 919013248874@s.whatsapp.net (2/12)
+[2025-09-25T11:23:56.449Z] ✅ Session 6 | Sent to 918800162111@s.whatsapp.net (1/12)
+[2025-09-25T11:23:56.578Z] ✅ Session 6 | Sent to 918130050290@s.whatsapp.net (2/12)
+[2025-09-25T11:23:57.193Z] ✅ Session 7 | Sent to 918130965885@s.whatsapp.net (3/12)
+[2025-09-25T11:23:57.283Z] ✅ Session 7 | Sent to 918800688290@s.whatsapp.net (3/12)
+[2025-09-25T11:24:00.301Z] ✅ Session 7 | Sent to 918800698994@s.whatsapp.net (4/12)
+[2025-09-25T11:24:00.724Z] ✅ Session 6 | Sent to 918800163152@s.whatsapp.net (2/12)
+[2025-09-25T11:24:02.195Z] ✅ Session 7 | Sent to 919013376629@s.whatsapp.net (3/12)
+[2025-09-25T11:24:02.563Z] ✅ Session 7 | Sent to 918130987080@s.whatsapp.net (4/12)
+[2025-09-25T11:24:03.019Z] ✅ Session 6 | Sent to 918130057855@s.whatsapp.net (3/12)
+[2025-09-25T11:24:03.188Z] ✅ Session 7 | Sent to 918800785065@s.whatsapp.net (5/12)
+[2025-09-25T11:24:03.636Z] ✅ Session 6 | Sent to 919013250878@s.whatsapp.net (3/12)
+[2025-09-25T11:24:05.153Z] ✅ Session 6 | Sent to 918800166064@s.whatsapp.net (3/12)
+[2025-09-25T11:24:05.205Z] ✅ Session 7 | Sent to 919013380075@s.whatsapp.net (4/12)
+[2025-09-25T11:24:05.444Z] ✅ Session 7 | Sent to 918285344041@s.whatsapp.net (5/12)
+[2025-09-25T11:24:07.952Z] ✅ Session 7 | Sent to 918800838924@s.whatsapp.net (6/12)
+[2025-09-25T11:24:08.028Z] ✅ Session 6 | Sent to 918130081280@s.whatsapp.net (4/12)
+[2025-09-25T11:24:08.078Z] ✅ Session 7 | Sent to 919013386856@s.whatsapp.net (5/12)
+[2025-09-25T11:24:08.448Z] ✅ Session 7 | Sent to 918285525224@s.whatsapp.net (6/12)
+[2025-09-25T11:24:10.912Z] ✅ Session 6 | Sent to 919013284124@s.whatsapp.net (4/12)
+[2025-09-25T11:24:10.983Z] ✅ Session 7 | Sent to 918800913086@s.whatsapp.net (7/12)
+[2025-09-25T11:24:11.027Z] ✅ Session 7 | Sent to 919013389677@s.whatsapp.net (6/12)
+[2025-09-25T11:24:12.372Z] ✅ Session 6 | Sent to 918800235198@s.whatsapp.net (4/12)
+[2025-09-25T11:24:12.433Z] ✅ Session 6 | Sent to 918130245484@s.whatsapp.net (5/12)
+[2025-09-25T11:24:13.804Z] ✅ Session 7 | Sent to 918285593922@s.whatsapp.net (7/12)
+[2025-09-25T11:24:13.866Z] ✅ Session 7 | Sent to 918800983657@s.whatsapp.net (8/12)
+[2025-09-25T11:24:13.938Z] ✅ Session 7 | Sent to 919013392387@s.whatsapp.net (7/12)
+[2025-09-25T11:24:14.981Z] ✅ Session 6 | Sent to 919013284333@s.whatsapp.net (5/12)
+[2025-09-25T11:24:16.556Z] ✅ Session 6 | Sent to 918800236878@s.whatsapp.net (5/12)
+[2025-09-25T11:24:16.630Z] ✅ Session 6 | Sent to 918130418929@s.whatsapp.net (6/12)
+[2025-09-25T11:24:16.872Z] ✅ Session 7 | Sent to 918802016485@s.whatsapp.net (9/12)
+[2025-09-25T11:24:16.923Z] ✅ Session 7 | Sent to 919013405532@s.whatsapp.net (8/12)
+[2025-09-25T11:24:19.946Z] ✅ Session 7 | Sent to 919013432041@s.whatsapp.net (9/12)
+[2025-09-25T11:24:20.813Z] ✅ Session 6 | Sent to 918800241686@s.whatsapp.net (6/12)
+[2025-09-25T11:24:20.878Z] ✅ Session 6 | Sent to 918130425255@s.whatsapp.net (7/12)
+[2025-09-25T11:24:21.068Z] ✅ Session 6 | Sent to 919013285696@s.whatsapp.net (6/12)
+[2025-09-25T11:24:21.490Z] ✅ Session 7 | Sent to 918285866979@s.whatsapp.net (8/12)
+[2025-09-25T11:24:22.903Z] ✅ Session 7 | Sent to 919013433367@s.whatsapp.net (10/12)
+[2025-09-25T11:24:23.739Z] ✅ Session 7 | Sent to 918802019094@s.whatsapp.net (10/12)
+[2025-09-25T11:24:24.478Z] ✅ Session 7 | Sent to 918285886071@s.whatsapp.net (9/12)
+[2025-09-25T11:24:24.946Z] ✅ Session 6 | Sent to 918800433673@s.whatsapp.net (7/12)
+[2025-09-25T11:24:26.078Z] ✅ Session 6 | Sent to 918130508657@s.whatsapp.net (8/12)
+[2025-09-25T11:24:26.400Z] ✅ Session 6 | Sent to 919013289627@s.whatsapp.net (7/12)
+[2025-09-25T11:24:26.454Z] ✅ Session 7 | Sent to 919013435502@s.whatsapp.net (11/12)
+[2025-09-25T11:24:26.686Z] ✅ Session 7 | Sent to 918802119659@s.whatsapp.net (11/12)
+[2025-09-25T11:24:27.407Z] ✅ Session 7 | Sent to 918287923032@s.whatsapp.net (10/12)
+[2025-09-25T11:24:28.983Z] ✅ Session 6 | Sent to 918800447547@s.whatsapp.net (8/12)
+[2025-09-25T11:24:29.687Z] ✅ Session 7 | Sent to 918802210177@s.whatsapp.net (12/12)
+[2025-09-25T11:24:30.378Z] ✅ Session 6 | Sent to 918130533040@s.whatsapp.net (9/12)
+[2025-09-25T11:24:31.690Z] 🎯 Session 7 finished sending 12 messages.
+[2025-09-25T11:24:32.388Z] ✅ Session 6 | Sent to 919013313554@s.whatsapp.net (8/12)
+[2025-09-25T11:24:33.006Z] ✅ Session 6 | Sent to 918800447878@s.whatsapp.net (9/12)
+[2025-09-25T11:24:33.380Z] ✅ Session 7 | Sent to 918373919270@s.whatsapp.net (11/12)
+[2025-09-25T11:24:33.815Z] ✅ Session 7 | Sent to 919013436885@s.whatsapp.net (12/12)
+[2025-09-25T11:24:35.823Z] 🎯 Session 7 finished sending 12 messages.
+[2025-09-25T11:24:50.811Z] ❌ Session 4 | Failed to send to 918587093113@s.whatsapp.net | Timed Out
+[2025-09-25T11:24:50.813Z] ❌ Session 4 | Failed to send to 918587124767@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.815Z] ❌ Session 4 | Failed to send to 918587881147@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.818Z] ❌ Session 4 | Failed to send to 918587888639@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.820Z] ❌ Session 4 | Failed to send to 918587991466@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.822Z] ❌ Session 4 | Failed to send to 918588996161@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.823Z] ❌ Session 4 | Failed to send to 918684016777@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.826Z] ❌ Session 4 | Failed to send to 918743003555@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.827Z] ❌ Session 4 | Failed to send to 918744091986@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.829Z] ❌ Session 4 | Failed to send to 918744996447@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.830Z] ❌ Session 4 | Failed to send to 918744999690@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.832Z] ❌ Session 4 | Failed to send to 918745011368@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.833Z] 🎯 Session 4 finished sending 0 messages.
+[2025-09-25T11:24:50.913Z] ❌ Session 3 | Failed to send to 917838141867@s.whatsapp.net | Timed Out
+[2025-09-25T11:24:50.915Z] ❌ Session 3 | Failed to send to 917838201074@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.918Z] ❌ Session 3 | Failed to send to 917838280890@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.921Z] ❌ Session 3 | Failed to send to 917838358490@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.923Z] ❌ Session 3 | Failed to send to 917838378323@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.925Z] ❌ Session 3 | Failed to send to 917838390238@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.928Z] ❌ Session 3 | Failed to send to 917838406017@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.931Z] ❌ Session 3 | Failed to send to 917838489213@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.932Z] ❌ Session 3 | Failed to send to 917838728429@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.934Z] ❌ Session 3 | Failed to send to 917838761963@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.936Z] ❌ Session 3 | Failed to send to 917838763738@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.940Z] ❌ Session 3 | Failed to send to 917838808537@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:50.941Z] 🎯 Session 3 finished sending 0 messages.
+[2025-09-25T11:24:51.629Z] ❌ Session 5 | Failed to send to 918950291347@s.whatsapp.net | Timed Out
+[2025-09-25T11:24:51.630Z] ❌ Session 5 | Failed to send to 919013041616@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.632Z] ❌ Session 5 | Failed to send to 919013044200@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.633Z] ❌ Session 5 | Failed to send to 919013087180@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.635Z] ❌ Session 5 | Failed to send to 919013131209@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.637Z] ❌ Session 5 | Failed to send to 919013131468@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.639Z] ❌ Session 5 | Failed to send to 919013134168@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.640Z] ❌ Session 5 | Failed to send to 919013202452@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.642Z] ❌ Session 5 | Failed to send to 919013204053@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.643Z] ❌ Session 5 | Failed to send to 919013212071@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.645Z] ❌ Session 5 | Failed to send to 919013221966@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.646Z] ❌ Session 5 | Failed to send to 919013228315@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.647Z] 🎯 Session 5 finished sending 0 messages.
+[2025-09-25T11:24:51.663Z] ❌ Session 0 | Failed to send to 919013448595@s.whatsapp.net | Timed Out
+[2025-09-25T11:24:51.666Z] ❌ Session 0 | Failed to send to 919013450721@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.668Z] ❌ Session 0 | Failed to send to 919013459451@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.669Z] ❌ Session 0 | Failed to send to 919013467616@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.673Z] ❌ Session 0 | Failed to send to 919013487400@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.675Z] ❌ Session 0 | Failed to send to 919013500996@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.676Z] ❌ Session 0 | Failed to send to 919013547412@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.678Z] ❌ Session 0 | Failed to send to 919013547686@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.681Z] ❌ Session 0 | Failed to send to 919013565753@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.683Z] ❌ Session 0 | Failed to send to 919013574744@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.684Z] ❌ Session 0 | Failed to send to 919013588532@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.685Z] ❌ Session 0 | Failed to send to 919013612655@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:51.686Z] 🎯 Session 0 finished sending 0 messages.
+[2025-09-25T11:24:53.170Z] ❌ Session 4 | Failed to send to 917838850813@s.whatsapp.net | Timed Out
+[2025-09-25T11:24:53.171Z] ❌ Session 4 | Failed to send to 917838882712@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.172Z] ❌ Session 4 | Failed to send to 917838897799@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.174Z] ❌ Session 4 | Failed to send to 917838921599@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.175Z] ❌ Session 4 | Failed to send to 917838965571@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.176Z] ❌ Session 4 | Failed to send to 917838970745@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.178Z] ❌ Session 4 | Failed to send to 917840047510@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.179Z] ❌ Session 4 | Failed to send to 917840047676@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.181Z] ❌ Session 4 | Failed to send to 917840804550@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.183Z] ❌ Session 4 | Failed to send to 918010054524@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.185Z] ❌ Session 4 | Failed to send to 918010098222@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.186Z] 🎯 Session 4 finished sending 1 messages.
+[2025-09-25T11:24:53.188Z] ❌ Session 4 | Failed to send to 918860604955@s.whatsapp.net | Timed Out
+[2025-09-25T11:24:53.189Z] ❌ Session 4 | Failed to send to 918860608634@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.191Z] ❌ Session 4 | Failed to send to 918860645146@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.192Z] ❌ Session 4 | Failed to send to 918860645339@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.194Z] ❌ Session 4 | Failed to send to 918860717342@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.195Z] ❌ Session 4 | Failed to send to 918860806658@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.197Z] ❌ Session 4 | Failed to send to 918860835707@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.199Z] ❌ Session 4 | Failed to send to 918860941876@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.201Z] ❌ Session 4 | Failed to send to 918871288060@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.205Z] ❌ Session 4 | Failed to send to 918882801791@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.208Z] ❌ Session 4 | Failed to send to 918950110993@s.whatsapp.net | Connection Closed
+[2025-09-25T11:24:53.208Z] 🎯 Session 4 finished sending 1 messages.
+[2025-09-25T11:56:37.638Z] 🚀 OTP Bulk send started | Sessions: 1 | Recipients: 3
+[2025-09-25T11:56:38.634Z] ✅ Session 1 | Sent to 917011611817@s.whatsapp.net (1/3)
+[2025-09-25T11:56:38.635Z] ⏳ Session 1 | Waiting 28.262s before next message
+[2025-09-25T11:57:07.889Z] ✅ Session 1 | Sent to 918800931204@s.whatsapp.net (2/3)
+[2025-09-25T11:57:07.890Z] ⏳ Session 1 | Waiting 17.252s before next message
+[2025-09-25T11:57:30.296Z] ✅ Session 1 | Sent to 91631161836@s.whatsapp.net (3/3)
+[2025-09-25T11:57:30.296Z] ⏳ Session 1 | Waiting 20.552s before next message
+[2025-09-25T11:57:50.862Z] 🎯 Session 1 finished sending 3 messages.
+[2025-09-25T12:07:39.472Z] 🚀 OTP Bulk send started | Sessions: 4 | Recipients: 77
+[2025-09-25T12:07:40.677Z] ✅ Session 4 | Sent to 919560037788@s.whatsapp.net (1/2)
+[2025-09-25T12:07:40.678Z] ⏳ Session 4 | Waiting 43.935s before next message
+[2025-09-25T12:07:41.591Z] ✅ Session 1 | Sent to 916372040021@s.whatsapp.net (1/25)
+[2025-09-25T12:07:41.592Z] ⏳ Session 1 | Waiting 46.097s before next message
+[2025-09-25T12:07:41.788Z] ✅ Session 2 | Sent to 918744853491@s.whatsapp.net (1/25)
+[2025-09-25T12:07:41.788Z] ⏳ Session 2 | Waiting 39.217s before next message
+[2025-09-25T12:07:41.880Z] ✅ Session 3 | Sent to 919250508214@s.whatsapp.net (1/25)
+[2025-09-25T12:07:41.880Z] ⏳ Session 3 | Waiting 29.978s before next message
+[2025-09-25T12:08:14.187Z] ✅ Session 3 | Sent to 919250525805@s.whatsapp.net (2/25)
+[2025-09-25T12:08:14.188Z] ⏳ Session 3 | Waiting 16.176s before next message
+[2025-09-25T12:08:21.017Z] ❌ Session 2 | Failed to send to 918750131733@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.020Z] ❌ Session 2 | Failed to send to 918750238562@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.022Z] ❌ Session 2 | Failed to send to 918800618544@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.025Z] ❌ Session 2 | Failed to send to 918800625399@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.027Z] ❌ Session 2 | Failed to send to 918800900207@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.029Z] ❌ Session 2 | Failed to send to 918810323789@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.030Z] ❌ Session 2 | Failed to send to 918826516456@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.032Z] ❌ Session 2 | Failed to send to 918826618309@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.033Z] ❌ Session 2 | Failed to send to 918826865546@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.035Z] ❌ Session 2 | Failed to send to 918851072126@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.036Z] ❌ Session 2 | Failed to send to 918851976036@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.037Z] ❌ Session 2 | Failed to send to 918920625454@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.038Z] ❌ Session 2 | Failed to send to 918929788242@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.040Z] ❌ Session 2 | Failed to send to 919013016441@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.043Z] ❌ Session 2 | Failed to send to 919015681114@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.045Z] ❌ Session 2 | Failed to send to 919210191930@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.046Z] ❌ Session 2 | Failed to send to 919210603359@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.049Z] ❌ Session 2 | Failed to send to 919211192127@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.051Z] ❌ Session 2 | Failed to send to 919211510427@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.052Z] ❌ Session 2 | Failed to send to 919212291204@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.054Z] ❌ Session 2 | Failed to send to 919212443296@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.056Z] ❌ Session 2 | Failed to send to 919212470512@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.059Z] ❌ Session 2 | Failed to send to 919213228475@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.061Z] ❌ Session 2 | Failed to send to 919213231091@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:21.061Z] 🎯 Session 2 finished sending 1 messages.
+[2025-09-25T12:08:25.744Z] ✅ Session 4 | Sent to 919560045755@s.whatsapp.net (2/2)
+[2025-09-25T12:08:25.744Z] ⏳ Session 4 | Waiting 41.02s before next message
+[2025-09-25T12:08:29.802Z] ✅ Session 1 | Sent to 917011283422@s.whatsapp.net (2/25)
+[2025-09-25T12:08:29.802Z] ⏳ Session 1 | Waiting 15.758s before next message
+[2025-09-25T12:08:30.383Z] ❌ Session 3 | Failed to send to 919250949220@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.387Z] ❌ Session 3 | Failed to send to 919266660968@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.392Z] ❌ Session 3 | Failed to send to 919278157065@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.395Z] ❌ Session 3 | Failed to send to 919278780178@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.397Z] ❌ Session 3 | Failed to send to 919278845555@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.399Z] ❌ Session 3 | Failed to send to 919279019123@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.401Z] ❌ Session 3 | Failed to send to 919310000932@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.403Z] ❌ Session 3 | Failed to send to 919310374908@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.404Z] ❌ Session 3 | Failed to send to 919310896980@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.406Z] ❌ Session 3 | Failed to send to 919311339393@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.407Z] ❌ Session 3 | Failed to send to 919311444027@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.409Z] ❌ Session 3 | Failed to send to 919311717694@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.413Z] ❌ Session 3 | Failed to send to 919311788888@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.415Z] ❌ Session 3 | Failed to send to 919312164647@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.416Z] ❌ Session 3 | Failed to send to 919312292651@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.418Z] ❌ Session 3 | Failed to send to 919312681314@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.420Z] ❌ Session 3 | Failed to send to 919313757513@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.423Z] ❌ Session 3 | Failed to send to 919319631505@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.425Z] ❌ Session 3 | Failed to send to 919350504096@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.427Z] ❌ Session 3 | Failed to send to 919350846676@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.429Z] ❌ Session 3 | Failed to send to 919354754822@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.431Z] ❌ Session 3 | Failed to send to 919540991011@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.433Z] ❌ Session 3 | Failed to send to 919555768604@s.whatsapp.net | Connection Closed
+[2025-09-25T12:08:30.434Z] 🎯 Session 3 finished sending 2 messages.
+[2025-09-25T12:08:47.638Z] ✅ Session 1 | Sent to 917048909363@s.whatsapp.net (3/25)
+[2025-09-25T12:08:47.639Z] ⏳ Session 1 | Waiting 57.264s before next message
+[2025-09-25T12:09:06.776Z] 🎯 Session 4 finished sending 2 messages.
+[2025-09-25T12:16:25.185Z] 🚀 OTP Bulk send started | Sessions: 2 | Recipients: 46
+[2025-09-25T12:16:25.772Z] ✅ Session 1 | Sent to 916372040021@s.whatsapp.net (1/25)
+[2025-09-25T12:16:25.773Z] ⏳ Session 1 | Waiting 33.611s before next message
+[2025-09-25T12:16:25.939Z] ✅ Session 2 | Sent to 918744853491@s.whatsapp.net (1/21)
+[2025-09-25T12:16:25.939Z] ⏳ Session 2 | Waiting 31.07s before next message
+[2025-09-25T12:16:57.990Z] ✅ Session 2 | Sent to 918750131733@s.whatsapp.net (2/21)
+[2025-09-25T12:16:57.991Z] ⏳ Session 2 | Waiting 35.009s before next message
+[2025-09-25T12:17:00.001Z] ✅ Session 1 | Sent to 917011283422@s.whatsapp.net (2/25)
+[2025-09-25T12:17:00.002Z] ⏳ Session 1 | Waiting 29.166s before next message
+[2025-09-25T12:17:29.746Z] ✅ Session 1 | Sent to 917048909363@s.whatsapp.net (3/25)
+[2025-09-25T12:17:29.748Z] ⏳ Session 1 | Waiting 42.287s before next message
+[2025-09-25T12:17:33.008Z] ❌ Session 2 | Failed to send to 918750238562@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.010Z] ❌ Session 2 | Failed to send to 918800618544@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.012Z] ❌ Session 2 | Failed to send to 918800625399@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.015Z] ❌ Session 2 | Failed to send to 918800900207@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.016Z] ❌ Session 2 | Failed to send to 918810323789@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.018Z] ❌ Session 2 | Failed to send to 918826516456@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.020Z] ❌ Session 2 | Failed to send to 918826618309@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.021Z] ❌ Session 2 | Failed to send to 918826865546@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.024Z] ❌ Session 2 | Failed to send to 918851072126@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.026Z] ❌ Session 2 | Failed to send to 918851976036@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.028Z] ❌ Session 2 | Failed to send to 918920625454@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.029Z] ❌ Session 2 | Failed to send to 918929788242@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.031Z] ❌ Session 2 | Failed to send to 919013016441@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.033Z] ❌ Session 2 | Failed to send to 919015681114@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.035Z] ❌ Session 2 | Failed to send to 919210191930@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.037Z] ❌ Session 2 | Failed to send to 919210603359@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.039Z] ❌ Session 2 | Failed to send to 919211192127@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.040Z] ❌ Session 2 | Failed to send to 919211510427@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.042Z] ❌ Session 2 | Failed to send to 919212291204@s.whatsapp.net | Connection Closed
+[2025-09-25T12:17:33.043Z] 🎯 Session 2 finished sending 2 messages.

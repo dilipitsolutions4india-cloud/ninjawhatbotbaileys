@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ninja Bot - Sessions</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+    h2 { color: #333; }
+    #sessionsList li { margin: 10px 0; }
+    .status { font-weight: bold; margin-left: 10px; }
+    #qrPanel { display:none; border:2px solid #333; padding:15px; background:#fff; width:300px; margin-top:20px; }
+    input, button { margin: 5px; padding: 5px; }
+    .session-controls { margin-top:10px; }
+  </style>
+</head>
+<body>
+
+<h2>Ninja Bot - Sessions Dashboard</h2>
+<p>Total registered sessions: <span id="sessionCount"><%= registered.length %></span></p>
+
+<!-- Form to register new session -->
+<form id="registerForm">
+  <input type="text" name="sessionId" placeholder="Enter new session ID" required/>
+  <button type="submit">Register Session</button>
+</form>
+
+<!-- Buttons to start/stop all sessions -->
+<div class="session-controls">
+  <button id="startAll">Start All</button>
+  <button id="stopAll">Stop All</button>
+</div>
+
+<ul id="sessionsList">
+  <% registered.forEach(id => { %>
+    <li id="row-<%= id %>">
+      <%= id %> - <span class="status"><%= active.includes(id) ? "Connected" : "Stopped" %></span>
+      <form action="/sessions/start" method="POST" style="display:inline">
+        <input type="hidden" name="id" value="<%= id %>">
+        <button type="submit">Start</button>
+      </form>
+      <form action="/sessions/stop" method="POST" style="display:inline">
+        <input type="hidden" name="id" value="<%= id %>">
+        <button type="submit">Stop</button>
+      </form>
+      <form action="/sessions/delete" method="POST" style="display:inline">
+        <input type="hidden" name="id" value="<%= id %>">
+        <button type="submit" onclick="return confirm('Delete session <%= id %>?')">Delete</button>
+      </form>
+    </li>
+  <% }) %>
+</ul>
+
+<!-- QR Panel -->
+<div id="qrPanel">
+  <h3>Scan QR for session: <span id="qrSession"></span></h3>
+  <img id="qrImage" alt="QR code" style="width:260px;height:260px;">
+  <p><button id="closeQr">Close</button></p>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  const socket = io()
+
+  // Listen for QR code events
+  socket.on("qr", (data) => {
+    document.getElementById("qrSession").innerText = data.sessionId
+    document.getElementById("qrImage").src = data.qrDataUrl
+    document.getElementById("qrPanel").style.display = "block"
+  })
+
+  // Listen for session status updates
+  socket.on("sessionStatus", (data) => {
+    const row = document.getElementById("row-" + data.sessionId)
+    if (row) {
+      row.querySelector(".status").innerText = data.status
+    }
+    if (data.status === "connected") document.getElementById("qrPanel").style.display = "none"
+    // Update total count of active sessions
+    const count = Array.from(document.querySelectorAll(".status"))
+      .filter(s => s.innerText === "connected").length
+    document.getElementById("sessionCount").innerText = count
+  })
+
+  // Register new session
+  document.getElementById("registerForm").addEventListener("submit", async (e) => {
+    e.preventDefault()
+    const sessionId = e.target.sessionId.value
+    if (!sessionId) return alert("Enter session ID")
+    await fetch("/sessions/register", {
+      method:"POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id: sessionId })
+    })
+    .then(() => location.reload())
+    .catch(console.error)
+  })
+
+  // Start individual session
+  document.querySelectorAll(".startBtn").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const id = btn.dataset.id
+      await fetch("/sessions/start", {
+        method:"POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id })
+      })
+    })
+  })
+
+  // Stop individual session
+  document.querySelectorAll(".stopBtn").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const id = btn.dataset.id
+      await fetch("/sessions/stop", {
+        method:"POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id })
+      })
+    })
+  })
+
+  // Start all sessions
+  document.getElementById("startAll").addEventListener("click", async () => {
+    await fetch("/sessions/startAll", { method:"POST" })
+  })
+
+  // Stop all sessions
+  document.getElementById("stopAll").addEventListener("click", async () => {
+    await fetch("/sessions/stopAll", { method:"POST" })
+  })
+
+  document.getElementById("closeQr").addEventListener("click", () => {
+    document.getElementById("qrPanel").style.display = "none"
+  })
+</script>
+
+</body>
+</html>

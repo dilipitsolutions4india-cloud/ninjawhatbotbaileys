@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulk OTP Sender</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    textarea, input, select {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: white;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h2>Bulk OTP Sender</h2>
+
+  <div class="card">
+    <p><b>Registered Sessions:</b> <%= registeredSessions %></p>
+    <p><b>Active Sessions:</b> <%= activeSessions %></p>
+
+    <form action="/bulk/send" method="post" enctype="multipart/form-data">
+      <label>Manual Numbers (comma separated)</label>
+      <textarea name="numbers" rows="3" placeholder="917011676767,917011611817"></textarea>
+
+      <label>Or Upload CSV</label>
+      <input type="file" name="csv">
+
+      <label>OTP Value</label>
+      <input type="text" name="otpValue" required placeholder="Enter OTP">
+
+      <label>Sessions to Use</label>
+      <input type="number" name="sessionsCount" value="<%= activeSessions %>" min="1" max="<%= activeSessions %>">
+
+      <button type="submit">Send OTP Messages</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h3>Sending Progress</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Session ID</th>
+          <th>Sent</th>
+          <th>Pending</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="progressBody">
+        <% progress.forEach(function(p) { %>
+          <tr>
+            <td><%= p.sessionId %></td>
+            <td><%= p.sent %></td>
+            <td><%= p.pending %></td>
+            <td><%= p.status %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

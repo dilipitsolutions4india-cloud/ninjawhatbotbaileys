@@ -1,0 +1,34 @@
+
+<h2>Automation Rules</h2>
+<form>
+  <select onchange="window.location='/automation/'+this.value">
+    <option value="">Select Session</option>
+    <% registered.forEach(id => { %>
+      <option value="<%= id %>" <%= sessionId===id?"selected":"" %>><%= id %></option>
+    <% }) %>
+  </select>
+</form>
+
+<% if(sessionId){ %>
+<h3>Rules for <%= sessionId %></h3>
+<ul>
+  <% rules.forEach(r => { %>
+    <li><strong><%= r.keyword %></strong> => <%= r.reply %></li>
+  <% }) %>
+</ul>
+
+<h4>Add Rule</h4>
+<form action="/automation/addRule" method="POST">
+  <input type="hidden" name="sessionId" value="<%= sessionId %>"/>
+  <input type="text" name="keyword" placeholder="Keyword" required/>
+  <input type="text" name="reply" placeholder="Reply" required/>
+  <button type="submit">Add</button>
+</form>
+
+<h4>Default Reply</h4>
+<form action="/automation/setDefault" method="POST">
+  <input type="hidden" name="sessionId" value="<%= sessionId %>"/>
+  <input type="text" name="reply" placeholder="Default Reply" value="<%= defaultReply %>" required/>
+  <button type="submit">Set Default</button>
+</form>
+<% } %>
