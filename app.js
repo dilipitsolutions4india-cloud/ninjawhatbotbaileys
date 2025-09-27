@@ -464,12 +464,13 @@ async function startSock() {
       msg.message.conversation ||
       msg.message.extendedTextMessage?.text ||
       ""
-
-    if (!fromMe) return
-    console.log(`📩 Incoming from ${from}: ${body}`)
     
-    if (fromMe) return
-    console.log(`📩 Outgoing from ${from}: ${body}`)
+    if (!body) return
+    if (fromMe) {
+  console.log(`📤 Outgoing to ${from}: ${body}`)
+} else {
+  console.log(`📩 Incoming from ${from}: ${body}`)
+}
     
 
     // reply after 2–7 minutes
