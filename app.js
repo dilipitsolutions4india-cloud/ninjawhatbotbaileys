@@ -60,7 +60,13 @@ const targetNumbers = [
   "919220229776@s.whatsapp.net",
   "918800931204@s.whatsapp.net",
   "919871182401@s.whatsapp.net",
-  "919667139363@s.whatsapp.net",
+  "919211828252@s.whatsapp.net",
+  "917011611817@s.whatsapp.net",
+  "918376970739@s.whatsapp.net",
+  "919953800553@s.whatsapp.net",
+  "919818344297@s.whatsapp.net",
+  "916361161836@s.whatsapp.net",
+
 ]
 
 // helpers
