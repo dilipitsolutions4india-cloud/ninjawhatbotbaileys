@@ -404,6 +404,36 @@ async function simulateTyping(sock, jid, text, typingTime = 3000) {
   }
 }
 
+const messageQueue = []
+let isSending = false
+
+async function processQueue(sock) {
+  if (isSending) return // already processing
+  isSending = true
+
+  while (messageQueue.length > 0) {
+    const { jid, text } = messageQueue.shift()
+    const typingTime = randInt(2000, 6000)
+
+    try {
+      await sock.sendPresenceUpdate("composing", jid)
+      console.log(`💬 Simulating typing to ${jid} for ${typingTime / 1000}s`)
+      await new Promise((resolve) => setTimeout(resolve, typingTime))
+      await sock.sendPresenceUpdate("paused", jid)
+
+      await sock.sendMessage(jid, { text })
+      console.log(`✅ Sent to ${jid}: ${text}`)
+    } catch (err) {
+      console.error(`❌ Failed to send to ${jid}:`, err?.message || err)
+    }
+
+    // optional buffer between messages
+    const buffer = randInt(2000, 5000)
+    await new Promise((resolve) => setTimeout(resolve, buffer))
+  }
+
+  isSending = false
+}
 
 // ================== INIT BAILEYS ==================
 async function startSock() {
@@ -428,23 +458,30 @@ async function startSock() {
     const msg = m.messages[0]
     if (!msg.message || !msg.key.remoteJid) return
 
+    const fromMe = msg.key.fromMe
     const from = msg.key.remoteJid
     const body =
       msg.message.conversation ||
       msg.message.extendedTextMessage?.text ||
       ""
 
-    if (!body) return
+    if (!fromMe) return
     console.log(`📩 Incoming from ${from}: ${body}`)
+    
+    if (fromMe) return
+    console.log(`📩 Outgoing from ${from}: ${body}`)
+    
 
     // reply after 2–7 minutes
     const replyDelay = randInt(120, 420)
     const replyText = pickRandom(MessagesPatterns)
     console.log(`⏲ Reply scheduled in ${replyDelay}s to ${from} -> "${replyText}"`)
 
-    setTimeout(async () => {
-      await simulateTyping(sock, from, replyText, randInt(2000, 6000)) // 2–6s typing
-    }, replyDelay * 1000)
+    setTimeout(() => {
+  messageQueue.push({ jid: from, text: replyText })
+  processQueue(sock)
+}, replyDelay * 1000)
+
 
     // random outgoing to other targets after 5–15 minutes
     if (targetNumbers.length > 0) {
@@ -454,9 +491,11 @@ async function startSock() {
       const targetText = pickRandom(MessagesPatterns)
       console.log(`⏲ Outgoing scheduled in ${targetDelay}s to ${targetJid} -> "${targetText}"`)
 
-      setTimeout(async () => {
-        await simulateTyping(sock, targetJid, targetText, randInt(2000, 6000))
-      }, targetDelay * 1000)
+      setTimeout(() => {
+  messageQueue.push({ jid: from, text: replyText })
+  processQueue(sock)
+}, replyDelay * 1000)
+
     }
   })
 
