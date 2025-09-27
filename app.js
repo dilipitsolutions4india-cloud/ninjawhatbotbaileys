@@ -365,6 +365,7 @@ const targetNumbers = [
 ]
 
 // helpers
+// ================== HELPERS ==================
 function randInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
@@ -376,25 +377,33 @@ function normalizeJid(raw) {
   if (raw.includes("@")) return raw
   return raw.replace(/^\+/, "") + "@s.whatsapp.net"
 }
+function delay(ms) {
+  return new Promise((res) => setTimeout(res, ms))
+}
+function randomHumanDelay() {
+  return randInt(10000, 60000) // 10–60s
+}
 
 async function simulateTyping(sock, jid, text, typingTime = 3000) {
   try {
-    // show "typing..."
     await sock.sendPresenceUpdate("composing", jid)
-    console.log(`💬 Simulating typing to ${jid} for ${typingTime / 1000}s`)
+    console.log(`💬 Typing to ${jid} for ${typingTime / 1000}s...`)
+    await delay(typingTime)
 
-    await new Promise((resolve) => setTimeout(resolve, typingTime))
-
-    // pause typing
     await sock.sendPresenceUpdate("paused", jid)
 
-    // finally send message
     await sock.sendMessage(jid, { text })
     console.log(`✅ Sent to ${jid}: ${text}`)
+
+    // after sending → pause randomly 10–60s
+    const wait = randomHumanDelay()
+    console.log(`⏳ Cooling down for ${wait / 1000}s`)
+    await delay(wait)
   } catch (err) {
     console.error(`❌ Failed to send to ${jid}:`, err?.message || err)
   }
 }
+
 
 // ================== INIT BAILEYS ==================
 async function startSock() {
