@@ -490,18 +490,17 @@ if (!fromMe){
 
     // random outgoing to other targets after 5–15 minutes
     if (targetNumbers.length > 0) {
-      const targetRaw = pickRandom(targetNumbers)
-      const targetJid = normalizeJid(targetRaw)
-      const targetDelay = randInt(300, 900)
-      const targetText = pickRandom(MessagesPatterns)
-      console.log(`⏲ Outgoing scheduled in ${targetDelay}s to ${targetJid} -> "${targetText}"`)
+  const targetRaw = pickRandom(targetNumbers)
+  const targetJid = normalizeJid(targetRaw)
+  const targetDelay = randInt(300, 900) // 5–15 min
+  const targetText = pickRandom(MessagesPatterns)
+  console.log(`⏲ Outgoing scheduled in ${targetDelay}s to ${targetJid} -> "${targetText}"`)
 
-      setTimeout(() => {
-  messageQueue.push({ jid: from, text: replyText })
-  processQueue(sock)
-}, replyDelay * 1000)
-
-    }}
+  setTimeout(() => {
+    messageQueue.push({ jid: targetJid, text: targetText }) // ✅ FIXED
+    processQueue(sock)
+  }, targetDelay * 1000) // ✅ also use targetDelay (not replyDelay)
+}}
   })
 
 
