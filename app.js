@@ -472,6 +472,8 @@ async function startSock() {
   console.log(`📩 Incoming from ${from}: ${body}`)
 }
     
+if (!fromMe){
+
 
     // reply after 2–7 minutes
     const replyDelay = randInt(120, 420)
@@ -482,6 +484,8 @@ async function startSock() {
   messageQueue.push({ jid: from, text: replyText })
   processQueue(sock)
 }, replyDelay * 1000)
+
+
 
 
     // random outgoing to other targets after 5–15 minutes
@@ -497,10 +501,12 @@ async function startSock() {
   processQueue(sock)
 }, replyDelay * 1000)
 
-    }
+    }}
   })
 
+
   return sock
+
 }
 
 // ================== START SERVER ==================
